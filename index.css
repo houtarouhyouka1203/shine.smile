@@ -5,5 +5,41 @@
         --color-3: #ffffff;
         --color-4: #C9D2DA;
         --color-5: #10375C;
+
+        --main-font: "Sora", sans-serif;
+        --font-2: "Open Sans", sans-serif;
     }
-    * {font-size: 1.6rem; font-family: "Sora", sans-serif;font-optical-sizing: auto; font-weight: 300; color: var(--color-2);}
+    * {font-size: 1.6rem; font-family: var(--main-font);font-optical-sizing: auto; font-weight: 300; color: var(--color-2);}
+
+/* Common selectors */
+    .content-margin {width: calc(100% - 30px * 2); margin-left: auto;margin-right: auto; max-width: 1170px;}
+
+    .logo {width: 86px;height: 31px; background: url(./assets/images/logo/logo.svg) center / cover no-repeat; display: block;}
+    .logo:hover {transform: scale(1.05);}
+
+    /* buttons */
+    .button2 {padding: 6px 3px; display: inline-block; color: var(--color-4);}
+    .button2::before {content: attr(title); display: block;;font-weight: 800; height: 0;visibility: hidden;}
+    .button2:hover {color: var(--color-3); font-weight: 400;}
+    .button1 {color: var(--color-4); font-weight: 400; background: var(--color-1); border-radius: 22px; border: 1px solid transparent;}
+    .button1:hover {background: var(--color-3); border-color: var(--color-1); color: var(--color-1);}
+    /* transition options */
+    a {text-decoration: none; transition: .3s;}
+    ul {list-style-type: none;}
+/* Particular selectors */
+    /* Navigation bar / Header */
+    .navigation { display: flex; justify-content: center; position: sticky; top: -15px; padding-top: 15px; background: var(--color-5);}
+    .navigation__wrapper {padding: 15px 30px; display: flex; align-items: center;}
+
+    .navigation__menu-list {margin-left: auto;margin-right: auto;}
+        .navigation__menu-list ul {display: inline-flex; align-items: center;gap: 42px}
+        .navigation__menu-list ul a {padding: 6px 3px; display: inline-flex; align-items: center;}
+        .navigation__menu-list ul a:before {content: ''; display: block; width: 6px;height: 6px; border-radius: 50%; background: transparent;margin-right: 8px;color: var(--color-4); transition: .3s;}
+        .navigation__menu-list ul a:hover {color: var(--color-3);}
+        .navigation__menu-list ul li:hover a::before {background: var(--color-3);}
+
+    .navigation__cta-wrapper {display: flex;align-items: center; gap: 28px;}
+        .navigation__button2 {padding: 8px 20px;}
+    /* Main */
+    
+    /* Footer */
