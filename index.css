@@ -1,0 +1,9 @@
+/* General formating */
+    :root {
+        --color-1: #2E80CE;
+        --color-2: #575F66;
+        --color-3: #ffffff;
+        --color-4: #C9D2DA;
+        --color-5: #10375C;
+    }
+    * {font-size: 1.6rem; font-family: "Sora", sans-serif;font-optical-sizing: auto; font-weight: 300; color: var(--color-2);}
