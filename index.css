@@ -44,7 +44,7 @@
     h1 {font-size: 7rem;color: var(--color-3);}
     h2 {font-size: 5rem;}
     
-    p.desc {font-size: 1.8rem; line-height: 1.6; margin-top: 18px;}
+    p.desc {font-size: 1.8rem; line-height: 1.6; margin-top: 18px; max-width: 468px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; overflow: hidden;}
 
 /* **************************************************** */
 
@@ -87,6 +87,7 @@
         .services__wrapper > * {display: block; width: 100%;}
             /* services/meta */
             .services__meta {grid-area: t;}
+                .services__meta > * {margin: 0 auto;}
                 .services__meta h2 {width: 100%;text-align: center;}
                 .services__desc {width: 100%;text-align: center;}
             /* services/image */
@@ -94,16 +95,26 @@
             /* services/list >> service items */
             .services__list {grid-area: l; padding: 36px 0;}
                 /* services/list/items */
-                .item.services__item {width: 100%; box-sizing: border-box;padding: 22px;border-radius: 10px; display: flex;align-items: flex-start;gap: 20px; transition: .3s;}
-                    .item__title {font-size: 1.8rem; margin-bottom: 8px; font-weight: 600;line-height: 1.2; color: var(--color-5); display: inline-block;}
-                        .item__title:hover{color: var(--color-1);}
-                    .item__desc {line-height: 1.75;}
-                    .item__icon {width: 60px;height: 60px;border-radius: 50%;display: flex;align-items: center;justify-content: center; background: #EFF6FD; flex-shrink: 0; box-shadow: 0 8px 16px rgba(0 0 0 / 5%);}
-                        .item__icon i {color: var(--color-5);}
-                .services__item:hover {box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);} 
-                .services__item:hover .item__icon {background: var(--color-5);} .services__item:hover i {color: var(--color-3);}
+                .services__sv-item {width: 100%; box-sizing: border-box;padding: 22px;border-radius: 10px; display: flex;align-items: flex-start;gap: 20px; transition: .3s;}
+                    .sv-item__title {font-size: 1.8rem; margin-bottom: 8px; font-weight: 600;line-height: 1.2; color: var(--color-5); display: inline-block;}
+                        .sv-item__title:hover{color: var(--color-1);}
+                    .sv-item__desc {line-height: 1.75;}
+                    .sv-item__icon {width: 60px;height: 60px;border-radius: 50%;display: flex;align-items: center;justify-content: center; background: #EFF6FD; flex-shrink: 0; box-shadow: 0 8px 16px rgba(0 0 0 / 5%);}
+                        .sv-item__icon i {color: var(--color-5);}
+                .services__sv-item:hover {box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);} 
+                .services__sv-item:hover .sv-item__icon {background: var(--color-5);} .services__sv-item:hover i {color: var(--color-3);}
                 /* services/list/cta */
                 .services__cta {display: inline-block; margin-top: auto; padding: 15px 50px;margin-top: 55px;}
         /*   main/how it works_container  */
-
+        .hiw {background: #F6FBFF;padding: 100px 0;display: flex;}
+            /* main/how it works/p.desc */
+            .hiw__desc {margin-bottom: 70px;}
+            /* main/how it works/list container */
+            .hiw__list {display: flex;align-items: flex-end; gap: 30px;height: 416px; flex-wrap: wrap; justify-content: center;}
+                .hiw__hiw-item {box-sizing: border-box; width: 370px;height: 400px;border-radius: 4px;border: 16px solid #eaf6ff;padding: 42px; transition: .3s;flex-shrink: 0; }
+                .hiw__hiw-item:hover {margin-bottom: 16px; border-color: var(--color-1);}
+                    .hiw-item__icon {width: 72px;height: 72px;margin-bottom: 18px;}
+                    .hiw-item__title {font-size: 2.6rem;font-weight: 600;color: var(--color-5);margin-bottom: 28px;}
+                    .hiw-item__desc {margin-bottom: 18px;line-height: 1.75;}
+                    .hiw-item__cta:hover {font-weight: 400;color: var(--color-1);}
     /* Footer */
