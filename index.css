@@ -10,7 +10,9 @@
         --font-2: "Open Sans", sans-serif;
     }
     * {font-size: 1.6rem; font-family: var(--main-font);font-optical-sizing: auto; font-weight: 300; color: var(--color-2);}
-
+    ::-webkit-scrollbar {background: transparent; width: 5px;}
+    ::-webkit-scrollbar-thumb {background: var(--color-5);}
+    
 /* Common selectors */
     .content-margin {width: calc(100% - 60px * 2); margin-left: auto;margin-right: auto; max-width: 1170px;}
 
@@ -93,7 +95,7 @@
             .services__list {grid-area: l; padding: 36px 0;}
                 /* services/list/items */
                 .item.services__item {width: 100%; box-sizing: border-box;padding: 22px;border-radius: 10px; display: flex;align-items: flex-start;gap: 20px; transition: .3s;}
-                    .item__title {font-size: 1.8rem; margin-bottom: 8px; font-weight: 600;line-height: 1.2; color: var(--color-5); display: block;}
+                    .item__title {font-size: 1.8rem; margin-bottom: 8px; font-weight: 600;line-height: 1.2; color: var(--color-5); display: inline-block;}
                         .item__title:hover{color: var(--color-1);}
                     .item__desc {line-height: 1.75;}
                     .item__icon {width: 60px;height: 60px;border-radius: 50%;display: flex;align-items: center;justify-content: center; background: #EFF6FD; flex-shrink: 0; box-shadow: 0 8px 16px rgba(0 0 0 / 5%);}
@@ -102,4 +104,6 @@
                 .services__item:hover .item__icon {background: var(--color-5);} .services__item:hover i {color: var(--color-3);}
                 /* services/list/cta */
                 .services__cta {display: inline-block; margin-top: auto; padding: 15px 50px;margin-top: 55px;}
+        /*   main/how it works_container  */
+
     /* Footer */
