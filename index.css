@@ -174,4 +174,11 @@
                         .blog-item__desc {font-size: 1.4rem; margin-bottom: 10px;line-height: 1.7;}
                         .blog-list__blog-item a {color: var(--color-5);}
                         .blog-list__blog-item a:hover, .blog-item__title:hover {color: var(--color-1);}
+        /* main/cta__appoint_container */
+        .appoint__wrapper {display: flex; flex-direction: column; align-items: center;padding: 100px 0;}
+            .appoint__title {margin-bottom: 18px; text-align: center;}
+            .appoint__hr {margin-bottom: 18px;width: 136px;height: 2px;background: var(--color-1); }
+            .appoint__desc {margin-bottom: 38px; max-width: 617px; text-align: center;}
+            .appoint__cta {padding: 15px 40px;}
+
     /* Footer */
