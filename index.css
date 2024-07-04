@@ -44,7 +44,7 @@
     h1 {font-size: 7rem;color: var(--color-3);}
     h2 {font-size: 5rem;}
     
-    p.desc {font-size: 1.8rem; line-height: 1.6; margin-top: 18px; max-width: 468px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; overflow: hidden;}
+    .desc {font-size: 1.8rem; line-height: 1.6; margin-top: 18px; max-width: 468px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient:vertical; overflow: hidden;}
 
     /* navigation l/r */
     .nav {display: flex;gap: 18px;}
@@ -157,4 +157,21 @@
                 .download__location {display: flex;align-items: center;gap: 28px;}
                     .download__store {display: inline-block; opacity: 0.8;}
                     .download__store:hover {opacity: 1;}
+        /*  main/blog_container */
+        .blog {overflow: inherit;}
+        .blog__wrapper {display: grid;grid-template-columns: .4fr .6fr; grid-gap: 130px; align-items: center;}
+            /* blog/text */
+            .blog__text {display: grid;grid-gap: 28px;}
+                .blog__cta {display: inline-block; color: #10375C;}
+                .blog__cta:hover {text-decoration: underline;}
+            /* blog/list */
+            .blog-list {display: grid;grid-template-columns: repeat(auto-fill, 270px); grid-auto-rows: 375px;grid-auto-columns: 270px;grid-gap: 30px; overflow: hidden; grid-auto-flow: column;}
+                .blog-list__blog-item {border-radius: 12px; border: 1px solid #E8EBEE; box-sizing: border-box; overflow: hidden; transition: 0.3s;}
+                .blog-list__blog-item:hover {border-color: transparent;box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);}
+                    .blog-item__img {height: 172px; object-fit: cover;}
+                    .blog-item__meta {padding: 18px 22px; }
+                        .blog-item__title {font-size: 1.6rem; margin-bottom: 10px;line-height: 1.6;}
+                        .blog-item__desc {font-size: 1.4rem; margin-bottom: 10px;line-height: 1.7;}
+                        .blog-list__blog-item a {color: var(--color-5);}
+                        .blog-list__blog-item a:hover, .blog-item__title:hover {color: var(--color-1);}
     /* Footer */
