@@ -148,4 +148,13 @@
                     .person__name {color: var(--color-5); font-weight: 400; text-align: center; line-height: 1.75; display: block;transition: 0.3s;}
                     .person__name:hover {font-weight: 600;color: var(--color-1);}
                     .person__location {font-size: 1.4rem;text-align: center;line-height: 1.8;}
+        /*  main/download_container */
+        .download__wrapper {border-radius: 4px;background: var(--color-1);padding: 76px 70px; box-sizing: border-box; position: relative;}
+            .download__image {flex-shrink: 0;width: 284px;height: 522px; margin-bottom: -70px; background: url(./assets/images/page-landing/cta-download/phone.svg) center/contain no-repeat; position: absolute;bottom: 70px;}
+            .download__text {margin-left: auto; width: 50%;}
+                .download__title {color: var(--color-3);margin-bottom: 18px;}
+                .download__desc {color: var(--color-3); margin-bottom: 38px; }
+                .download__location {display: flex;align-items: center;gap: 28px;}
+                    .download__store {display: inline-block; opacity: 0.8;}
+                    .download__store:hover {opacity: 1;}
     /* Footer */
