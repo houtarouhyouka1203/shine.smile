@@ -216,6 +216,6 @@
                 .subscribe__email {border: 1px solid #406181; width: 212px;padding: 10px;box-sizing: border-box; border-radius: 4px;outline: none; background: transparent; font-family: var(--font-2); font-size: 1.4rem; }
                 .subscribe__button {padding: 10px 20px; border: 0; font-family: var(--font-2); font-size: 1.4rem; border-radius: 4px; outline: none;}
         .footer__hr {width: 100%;height: 1px;background: #406181; margin: 28px 0;}
-        .copyright {font-size: 1.4rem; font-family: var(--font-2);}
+        .copyright {font-size: 1.4rem; font-family: var(--font-2);display: block;text-align: center;}
 
         
